@@ -9,7 +9,6 @@ let wins = 0
 let noOfGuesses = 5
 let randomWord
 let loseGuess
-//let copy = randomword;
 
 //Event after key is released ensuring only letters are used
 
@@ -29,8 +28,7 @@ function refreshGame() {
     loseGuess = noOfGuesses
     
     // randomizes name choices
-    randomWord = names[Math.floor(Math.random() * names.length)]
-    //let copy = randomSong
+    randomWord = names[Math.floor(Math.random() * names.length)
 
     // Empty arrays to fill with variables
     guesses = []
@@ -100,24 +98,3 @@ refreshGame();
 }
 
 });
-
-
-// // replace characters at a certain index in the string
-// function setCharAt(str, index, chr) {
-//   if(index > str.length) return str;
-//   return str.substr(0, index) + chr + str.substr(index+1);
-// }
-
-// //For loop to repalce all characters with blank lines
-// for (i=0; i<randomsong.length; i++) { 
-//   if (copy.charAt(i) != " ") {
-//     copy = setCharAt(copy, i, "_");
-//   }
-// }
-
-// //String of letters guessed
-// document.addEventListener("keyup", function(event){
-//   extraKey = event.key;
-//   $("#letters").prepend(extraKey);
-
-// });
