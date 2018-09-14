@@ -27,11 +27,7 @@ function refreshGame() {
     loseGuess = noOfGuesses
     
     // randomizes name choices
-<<<<<<< HEAD
     randomWord = names[Math.floor(Math.random() * names.length)]
-=======
-    randomWord = names[Math.floor(Math.random() * names.length)
->>>>>>> de5fa1ca909d9dd5422e782d8eaf75f937dd449c
 
     // Empty arrays to fill with variables
     guesses = []
@@ -101,8 +97,5 @@ refreshGame();
 }
 
 });
-<<<<<<< HEAD
 
 
-=======
->>>>>>> de5fa1ca909d9dd5422e782d8eaf75f937dd449c
