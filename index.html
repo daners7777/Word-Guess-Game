@@ -12,19 +12,42 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+
+     <!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <title>Zelda Hangman</title>
   </head>
   <body>
     <h1>Zelda Hangman</h1>
 
-    <h2>PRESS ANY KEY TO GET STARTED!<h2>
-    <h2>WINS<h2>
-    <h2>CURRENT WORD<h2>
-    <h2>NUMBER OF GUESSES REMAINING<h2>
-    <h2>LETTERS ALREADY GUESSED<h2>
 
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+    <img class="images, center-block" class="rounded mx-auto d-block" src="assets/images/ocarina.png" alt="Link with Ocarina">
+    </div>
+    <div class="col-sm-6" id="line">
+        <h2 id=any><u>PRESS ANY KEY TO GET STARTED!</u><h2>
+        <h3>-Guess The Zelda Characters-</h3>
+        <br>
+        <h2>WINS<h2>
+        <p class="color" id="wins-display"></p>
+        <h2>CURRENT WORD<h2>
+        <p class="color" id="current-display"></p>
+        <h2>NUMBER OF GUESSES REMAINING<h2>
+        <p class="color" id="remaining-display"></p>
+        <h2>LETTERS ALREADY GUESSED<h2>
+        <p class="color" id="letters-display"></p>
+    </div>
+  </div>
+</div>
+
+<audio src="assets/music/openingtheme.mp3" autoplay>
 
     <!-- Optional JavaScript -->
+    <script src="assets/javascript/game.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
